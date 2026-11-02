@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 300px; margin: 12px; font: 13px/1.5 system-ui, sans-serif; color: #222; }
+  h1 { font-size: 14px; margin: 0 0 6px; }
+  p { margin: 0 0 6px; color: #666; font-size: 12px; }
+  textarea { box-sizing: border-box; width: 100%; height: 110px; font: inherit; padding: 6px; }
+  .row { display: flex; align-items: center; gap: 8px; margin: 6px 0 12px; }
+  #status { color: #2a7d2a; font-size: 12px; }
+  #candidates { display: flex; flex-wrap: wrap; gap: 4px; max-height: 160px; overflow-y: auto; }
+  #candidates button { font: inherit; font-size: 12px; padding: 2px 8px; border: 1px solid #ccc; border-radius: 12px; background: #f7f7f7; cursor: pointer; }
+  #candidates button:hover { background: #e8eefc; border-color: #9ab; }
+</style>
+</head>
+<body>
+  <h1>フィルタするメディア</h1>
+  <p>1行に1メディア。名前は完全一致で判定します。</p>
+  <textarea id="list" spellcheck="false"></textarea>
+  <div class="row">
+    <button id="save">保存</button>
+    <span id="status"></span>
+  </div>
+
+  <h1>最近見たメディア</h1>
+  <p>クリックで上のリストに追加します。</p>
+  <div id="candidates"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

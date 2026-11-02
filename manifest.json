@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Yahoo!ニュース トピックス メディア非表示",
+  "version": "0.1.0",
+  "description": "Yahoo!ニュースのトピックス一覧から、指定したメディアの記事を非表示にします。",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "フィルタするメディアを編集",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://news.yahoo.co.jp/topics*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
