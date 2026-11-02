@@ -3,7 +3,7 @@
 // フィルタしたいメディア名は popup で編集し、chrome.storage.sync に保存する
 // （JSON-LD の author.name と完全一致で比較）
 const BLOCKED_KEY = 'blockedMedia';
-const DEFAULT_BLOCKED = ['AERA DIGITAL'];
+const DEFAULT_BLOCKED = [];
 
 // 対象のリスト: トピックス一覧 + 右カラムの「トピックス（主要）」
 const ROOT = ':is(#uamods-topics, #yjnSub)';

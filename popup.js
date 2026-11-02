@@ -2,7 +2,7 @@
 
 // content.js と同じキー・初期値
 const BLOCKED_KEY = 'blockedMedia';
-const DEFAULT_BLOCKED = ['AERA DIGITAL'];
+const DEFAULT_BLOCKED = [];
 const CACHE_KEY = 'mediaByPickupId';
 
 const listEl = document.getElementById('list');
