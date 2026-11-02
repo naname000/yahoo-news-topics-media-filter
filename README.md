@@ -47,3 +47,7 @@ Yahoo!ニュースの[トピックス一覧](https://news.yahoo.co.jp/topics)で
 | `manifest.json` | 拡張の定義 |
 | `content.js` | メディア名の取得・キャッシュと、表示・グレーアウト |
 | `popup.html` / `popup.js` | フィルタ対象メディアの編集画面 |
+
+## ライセンス
+
+[MIT](LICENSE)
