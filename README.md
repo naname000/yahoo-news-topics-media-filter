@@ -16,6 +16,10 @@ Yahoo!ニュースの[トピックス一覧](https://news.yahoo.co.jp/topics)で
 2. Chrome で `chrome://extensions` を開き、右上の「デベロッパーモード」をオンにする
 3. 「パッケージ化されていない拡張機能を読み込む」で、このフォルダを選ぶ
 
+パッケージ化されていない拡張は Chrome の同期では配られないため、使いたい PC ごとにこの手順で読み込んでください。
+
+`manifest.json` に `key` を入れて拡張 ID を固定しているので、どの PC のどのフォルダから読み込んでも ID は `bkaflnmmbbgnokiklkbcngebglmbhjjj` になります。
+
 ## 使い方
 
 - トピックス一覧を開くと、見出しの下にメディア名が表示されます
@@ -33,7 +37,7 @@ Yahoo!ニュースの[トピックス一覧](https://news.yahoo.co.jp/topics)で
 
 - 取得は同時 3 件までです。結果は `chrome.storage.local` にキャッシュするので、2 回目以降は新しく入ったトピックだけを取得します
 - メディア名の表示とグレーアウトは CSS（`::after` と `:has()`）だけで行い、ページの DOM には手を加えません。判定済みの記事は、ページを開いた時点で反映されます
-- フィルタ対象のリストは `chrome.storage.sync` に保存します。Chrome の同期がオンなら、他の端末にも引き継がれます
+- フィルタ対象のリストは `chrome.storage.sync` に保存します。Chrome の同期がオンなら、同じ Google アカウントの他の PC にも引き継がれます（拡張 ID を固定しているので、各 PC で読み込むだけで共有されます）。キャッシュ（`storage.local`）は PC ごとです
 - 必要な権限は `storage` だけです（`host_permissions` は使いません）
 
 ## ファイル構成
