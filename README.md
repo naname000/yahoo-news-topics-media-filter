@@ -1,4 +1,4 @@
-# yahoo_erase_feed_chrome
+# Yahoo!ニュース トピックス メディアフィルタ
 
 Yahoo!ニュースの[トピックス一覧](https://news.yahoo.co.jp/topics)で、記事ごとの配信メディア名を表示し、指定したメディアの記事をグレーアウトする Chrome 拡張（Manifest V3）です。
 

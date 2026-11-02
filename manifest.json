@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Yahoo!ニュース トピックス メディア非表示",
+  "name": "Yahoo!ニュース トピックス メディアフィルタ",
   "version": "0.1.0",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj4zz/ormBIIbVfSDwooTvBpvUc+J63jSBfyioXyGANQWTC+0kUYYV4kuKaR/z5Ld70hlyhm3bj0zIogmdaiSO44tx2Ys2GgirJHOXTOe5taXXtuPmBbkEyt5Y6Gy1wOaYAaDWru1QIcJGRFfZAAs7xNUDrcAQHHUJWCXYjxdEq+tqe8rITuxjEx1uR8L1l+BhoxQHuIEb5mNFDhzBKSwOnCykRjmYwUkOzBKzIPUnKj/1E5wUbQNW3lviH3MyjD3T1D8C+VAjUl1b4L1VO8yYXee5DgOMcBglgPWCDc9AOH3g8MgnXDOpykNmLmAiUc6+HOf+8E5GkPYcE0GgNQ+2QIDAQAB",
   "description": "Yahoo!ニュースのトピックス一覧に記事のメディア名を表示し、指定したメディアの記事をグレーアウトします。",
